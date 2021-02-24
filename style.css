@@ -1,0 +1,92 @@
+a{
+    color: #0065FC;
+    text-decoration: none;
+}
+
+a:hover{
+    color: grey;
+}
+
+#conteneur-header{
+    display: flex;
+    border: 2px sold #444;
+}
+
+.element:nth-child(1){
+    width: 60%;
+}
+
+.element:nth-child(2){
+    background-color: transparent;
+
+}
+
+.element:nth-child(2) ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+    
+}
+
+.element:nth-child(2) ul li{
+    display: inline;
+    padding-inline: 20px;
+    
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.recherche button{
+    background-color: #0065FC;
+    color: white;
+}
+
+.filtre button{
+    font-size: 15px;
+    border-radius: 20px;
+    border-width: 2px;
+}
+
+.panneau{
+    background-color:  #F2F2F2;
+}
+
+#conteneur-hebergement{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#conteneur-hebergement-ville{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#conteneur-hebergement-populaire{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#conteneur-hebergement-populaire img{
+    margin-top: 15px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+#conteneur-hebergement-ville img{
+    margin-top: 15px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+footer{
+    background-color: #F2F2F2;
+}
