@@ -1,24 +1,22 @@
 a{
     color: #0065FC;
     text-decoration: none;
+    padding-top: 7px;
+    height: 30px;
 }
 
-a:hover{
+#navigation ul li:hover{
     color: grey;
+    border-top: 2px solid #0065FC ;
+    
 }
 
-#conteneur-header{
+header div h3{
+    position: absolute;
+    color:  #0065FC;
     display: flex;
-    border: 2px sold #444;
-}
-
-.element:nth-child(1){
-    width: 60%;
-}
-
-.element:nth-child(2){
-    background-color: transparent;
-
+    top: 5px;
+    right: 10px;
 }
 
 .element:nth-child(2) ul{
@@ -35,8 +33,9 @@ a:hover{
 }
 
 body{
+    width: 100%;
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .recherche button{
@@ -50,43 +49,111 @@ body{
     border-width: 2px;
 }
 
-.panneau{
-    background-color:  #F2F2F2;
-}
-
 #conteneur-hebergement{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.panneau-hebergement-ville{
+    width: 870px;
+    background-color:  #F2F2F2;
+    margin-right: 3.50%;
+    margin-bottom: 3.50%;
+    border-radius: 30px;
+}
+
+.panneau-hebergement-populaire{
+    width: 420px;
+    background-color:  #F2F2F2;
+    border-radius: 30px;
+}
+
+#conteneur-hebergement div h3{
+    padding-left: 20px;
 }
 
 #conteneur-hebergement-ville{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
 }
+
 
 #conteneur-hebergement-populaire{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
+
+}
+
+
+#conteneur-hebergement-ville div{
+   width: 250px;
+   padding: 20px;
+}
+
+#conteneur-hebergement-populaire div{
+    width: 250px;
+    padding: 20px;
 }
 
 #conteneur-hebergement-populaire img{
-    margin-top: 15px;
-    width: 150px;
-    height: 100px;
+    width: 225px;
     border-radius: 5px;
-    margin-bottom: 25px;
 }
 #conteneur-hebergement-ville img{
-    margin-top: 15px;
-    width: 150px;
-    height: 100px;
+   
+    width: 225px;
     border-radius: 5px;
-    margin-bottom: 25px;
 }
 
+#conteneur-activites{
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+}
+
+#conteneur-activites div{
+    width: 250px;
+}
+#conteneur-activites div img{
+    width: 200px;
+}
 footer{
+    display: flex;
     background-color: #F2F2F2;
+    justify-content: flex-start;
+
+}
+
+footer h4{
+    margin-bottom: 30px;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+footer ul li{
+    margin-bottom: 20px;
+}
+
+#footer-a-propos{
+    margin-top: 25px;
+    margin-left: 3.47%;
+}
+
+#footer-hebergement{
+    margin-top: 25px;
+    margin-left: 15.97%;
+}
+
+#footer-assistance{
+    margin-top: 25px;
+    margin-left: 20.35%;
 }
