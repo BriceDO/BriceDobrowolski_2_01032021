@@ -21,6 +21,7 @@ a{
 
 header{
     display: flex;
+    font-size: 0.9rem;
 }
 
 #conteneur-navigation ul{
@@ -38,6 +39,7 @@ header{
     color:  #0065FC;
     padding-inline: 20px;
     margin-top: 12px;
+    font-weight: bold;
 }
 
 body{
@@ -45,9 +47,39 @@ body{
     font-size: 12px;
 }
 
-.recherche button{
+#barre-recherche{
+    display: flex;
+}
+
+input{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    background: transparent;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#icone-map{
+    padding: 15px;
+    background-color:  #F2F2F2;
+    border-top-left-radius:  20px;
+    border-bottom-left-radius: 20px;
+}
+
+#barre-recherche button{
+    padding: 15px;
     background-color: #0065FC;
     color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: 'Raleway', sans-serif;
+    border-top-right-radius:  10px;
+    border-bottom-right-radius: 10px;
+    border: 0;
 }
 
 .filtre button{

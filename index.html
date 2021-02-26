@@ -18,46 +18,55 @@
 
         <div class="element">
             <img src="images\logo\Reservia.svg" alt="logo">
-        </div>        
+        </div>
         <!-- 2. Navigation MENU -->
         <div id="conteneur-navigation">
-        <nav class="element" id="navigation">
-            <ul>
-                <a href="#menu-hebergement"><li>Hébergements</li></a>
-                <a href="#menu-activite"><li>Activités</li></a>
-            </ul>
-        </nav>
+            <nav class="element" id="navigation">
+                <ul>
+                    <a href="#menu-hebergement">
+                        <li>Hébergements</li>
+                    </a>
+                    <a href="#menu-activite">
+                        <li>Activités</li>
+                    </a>
+                </ul>
+            </nav>
             <a id="boutton-inscrire" href="#">S'inscrire</a>
         </div>
     </header>
-        <aside>
-            <h3>Trouvez votre hébergement pour des vacances de rêves</h3>
-            <p>En plein centre ville ou en pleine nature</p>
-        </aside>
-    
+    <aside>
+        <h3>Trouvez votre hébergement pour des vacances de rêves</h3>
+        <p>En plein centre ville ou en pleine nature</p>
+    </aside>
+<br>
     <!-- 3. Barre de recherche et Filtres -->
-    <section>
-        <div class="recherche">
+    <section id="barre-recherche">
+        <div id="icone-map">
             <i class="fas fa-map-marker-alt"></i>
-            <input type="recherche" id="rechercher-ville" value="Marseille, France">
-            <button>Rechercher</button>
         </div>
-        <br /><br />
-        <div class="filtre">
-            <span>Filtres</span>
-            <i class="fas fa-money-bill-wave"></i>
-            <button>Economique</button>
-            <i class="fas fa-child"></i>
-            <button>Familial</button>
-            <i class="fas fa-heart"></i>
-            <button>Romantique</button>
-            <i class="fas fa-dog"></i>
-            <button>Animaux autorisés</button>
-        </div>
+            <div>
+                <input type="recherche" id="rechercher-ville" value="Marseille, France">
+            </div>
+                <button>Rechercher</button>
     </section>
+    <br><br>
+    <div class="filtre">
+        <span>Filtres</span>
+        <i class="fas fa-money-bill-wave"></i>
+        <button>Economique</button>
+        <i class="fas fa-child"></i>
+        <button>Familial</button>
+        <i class="fas fa-heart"></i>
+        <button>Romantique</button>
+        <i class="fas fa-dog"></i>
+        <button>Animaux autorisés</button>
+    </div>
+    </section>
+    <br><br>
     <aside>
         <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </aside>
+    <br><br><br>
     <!-- 4. Hébergements ville -->
     <section id="conteneur-hebergement">
         <div class="panneau-hebergement-ville">
@@ -225,7 +234,7 @@
             </section>
         </div>
     </section>
-          <!-- 5. Activités à Marseille -->             
+    <!-- 5. Activités à Marseille -->
     <div class="panneau-activite">
         <h3 id="menu-activite">Activités à Marseille</h3>
         <section id="conteneur-activites">
