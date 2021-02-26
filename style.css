@@ -1,39 +1,46 @@
 a{
-    color: #0065FC;
     text-decoration: none;
-    padding-top: 7px;
-    height: 30px;
 }
 
-#navigation ul li:hover{
-    color: grey;
-    border-top: 2px solid #0065FC ;
-    
-}
-
-header div h3{
-    position: absolute;
+#navigation{
     color:  #0065FC;
+}
+
+#conteneur-navigation{
+    position: absolute;
     display: flex;
     top: 5px;
     right: 10px;
 }
 
-.element:nth-child(2) ul{
+#navigation ul li:hover{
+    border-top: 2px solid #0065FC ; 
+    color: #0065FC;
+    padding-top: 16px;
+}
+
+header{
+    display: flex;
+}
+
+#conteneur-navigation ul{
     list-style-type: none;
-    margin: 0px;
-    padding: 0;
     
 }
 
-.element:nth-child(2) ul li{
+#conteneur-navigation ul li{
     display: inline;
     padding-inline: 20px;
     
 }
 
+#boutton-inscrire{
+    color:  #0065FC;
+    padding-inline: 20px;
+    margin-top: 12px;
+}
+
 body{
-    width: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
 }
@@ -89,14 +96,11 @@ body{
 
 }
 
-
 #conteneur-hebergement-ville div{
-   width: 250px;
    padding: 20px;
 }
 
 #conteneur-hebergement-populaire div{
-    width: 250px;
     padding: 20px;
 }
 
@@ -105,7 +109,6 @@ body{
     border-radius: 5px;
 }
 #conteneur-hebergement-ville img{
-   
     width: 225px;
     border-radius: 5px;
 }

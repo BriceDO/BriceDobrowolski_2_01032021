@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <title>Reservia.fr Page d'acceuil
-    </title>
+    <title>Reservia.fr Page d'acceuil</title>
 </head>
 
 <body>
@@ -18,22 +17,24 @@
         <!-- 1. LOGO -->
 
         <div class="element">
-            <a href="reservia.fr"><img src="images\logo\Reservia.svg" alt="logo">
-            </a>
-                <h3>S'inscrire</h3>
-        </div>
+            <img src="images\logo\Reservia.svg" alt="logo">
+        </div>        
         <!-- 2. Navigation MENU -->
+        <div id="conteneur-navigation">
         <nav class="element" id="navigation">
             <ul>
-                <li><a href="#">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
+                <a href="#menu-hebergement"><li>Hébergements</li></a>
+                <a href="#menu-activite"><li>Activités</li></a>
             </ul>
         </nav>
+            <a id="boutton-inscrire" href="#">S'inscrire</a>
+        </div>
+    </header>
         <aside>
             <h3>Trouvez votre hébergement pour des vacances de rêves</h3>
             <p>En plein centre ville ou en pleine nature</p>
         </aside>
-    </header>
+    
     <!-- 3. Barre de recherche et Filtres -->
     <section>
         <div class="recherche">
@@ -60,7 +61,7 @@
     <!-- 4. Hébergements ville -->
     <section id="conteneur-hebergement">
         <div class="panneau-hebergement-ville">
-            <h3>
+            <h3 id="menu-hebergement">
                 Hébergements à Marseille
             </h3>
             <section id="conteneur-hebergement-ville">
@@ -147,7 +148,7 @@
                     </span>
                 </div>
                 <div>
-                    <img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="">
+                    <img src="images\hebergements\4_small\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="">
                     <br>
                     <b>Hôtel chez Amina</b><br>
                     Nuit à partir de 96€<br>
@@ -162,7 +163,7 @@
                     </span>
                 </div>
             </section>
-            <b><a href="" style="color: black" ;">Afficher plus</a></b>
+            <b>Afficher plus</b>
         </div>
         <!-- 4.2 Hébergements populaires -->
         <div class="panneau-hebergement-populaire">
@@ -224,8 +225,9 @@
             </section>
         </div>
     </section>
+          <!-- 5. Activités à Marseille -->             
     <div class="panneau-activite">
-        <h3>Activités à Marseille</h3>
+        <h3 id="menu-activite">Activités à Marseille</h3>
         <section id="conteneur-activites">
             <div>
                 <img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
