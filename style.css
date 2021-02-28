@@ -2,10 +2,6 @@ a{
     text-decoration: none;
 }
 
-#navigation{
-    color:  #0065FC;
-}
-
 #conteneur-navigation{
     position: absolute;
     display: flex;
@@ -53,6 +49,10 @@ body{
     display: flex;
 }
 
+#filtre a{
+    text-decoration: none;
+    color: black;
+}
 
 input{
     border-style: solid;
@@ -91,29 +91,71 @@ input{
 #filtre{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-#filtre div{
-    border-radius: 60px;
-    margin-right: 15px;
-    border: solid black 2px;
-}
-
-#filtre div i{
-    color: #0065FC;
-    background-color: #deebff;
-    border-radius: 100px;
-    box-shadow: 0px 0px 2px #888;
-}
-
-#filtre div button{
-    text-align: center;
-    font-weight: bold;
-    font-size: 0.9rem;
+#filtre a{
+    font-size: 14px;
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     background-color: transparent;
-    border: 0;
+    border:#F2F2F2 solid;
+    border-radius: 50px;
+    margin:10px;
+    padding-left:0px;
+    padding-right: 19px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+
 }
+
+#eco{
+  
+
+}
+#eco::before{
+    font-family: 'Font Awesome 5 Free';
+	content: "\f53a";
+    font-weight: 900;
+    color: #0065FC;
+    background: #deebff;
+    padding: 13px;
+    border-radius: 50%;
+
+}
+
+#fam::before{
+    font-family: 'Font Awesome 5 Free';
+	content: "\f1ae";
+    font-weight: 900;
+    color: #0065FC;
+    background: #deebff;
+    padding: 13px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#rom::before{
+    font-family: 'Font Awesome 5 Free';
+	content: "\f004";
+    font-weight: 900;
+    color: #0065FC;
+    background: #deebff;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+#ani::before{
+    font-family: 'Font Awesome 5 Free';
+	content: "\f6d3";
+    font-weight: 900;
+    color: #0065FC;
+    background: #deebff;
+    padding: 13px;
+    border-radius: 50%;
+}
+
+/* INFORMATION */
 
 aside :nth-child(1) i{
     color: #0065FC;
@@ -195,10 +237,16 @@ aside :nth-child(1) i{
     width: 200px;
 }
 footer{
+    text-decoration: none;
     display: flex;
     background-color: #F2F2F2;
     justify-content: flex-start;
 
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }
 
 footer h4{
@@ -212,7 +260,7 @@ footer ul{
 }
 
 footer ul li{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #footer-a-propos{
