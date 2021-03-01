@@ -1,23 +1,27 @@
 a{
     text-decoration: none;
+    color: black;
 }
 
 #conteneur-navigation{
-    position: absolute;
     display: flex;
-    top: 5px;
-    right: 10px;
+    position: absolute;
+    right: 0;
 }
 
 #navigation ul li:hover{
     border-top: 2px solid #0065FC ; 
     color: #0065FC;
-    padding-top: 16px;
+    padding-top: 20px;
 }
 
 header{
     display: flex;
     font-size: 0.9rem;
+}
+
+header title{
+    padding-bottom: 15px;
 }
 
 #conteneur-navigation ul{
@@ -27,26 +31,29 @@ header{
 
 #conteneur-navigation ul li{
     display: inline;
-    padding-inline: 20px;
+    padding-inline: 40px;
     
 }
 
 #boutton-inscrire{
     color:  #0065FC;
-    padding-inline: 20px;
+    padding-inline: 40px;
     margin-top: 12px;
     font-weight: bold;
 }
 
 body{
+
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+
 }
 
 /* BARRE DE RECHERCHE */
 
 #barre-recherche{
     display: flex;
+    padding-bottom: 15px;
 }
 
 #filtre a{
@@ -58,7 +65,7 @@ input{
     border-style: solid;
     box-shadow: 0em;
     padding: 13px;
-    text-align: center;
+    text-align: left;
     border-right: none;
     border-left: none;
     border-color: #F2F2F2;
@@ -92,6 +99,11 @@ input{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: 12px;
+}
+
+#filtre h4{
+    padding-right: 25px;
 }
 
 #filtre a{
@@ -109,10 +121,6 @@ input{
 
 }
 
-#eco{
-  
-
-}
 #eco::before{
     font-family: 'Font Awesome 5 Free';
 	content: "\f53a";
@@ -157,6 +165,10 @@ input{
 
 /* INFORMATION */
 
+aside :nth-child(1){
+    padding-bottom: 15px;
+}
+
 aside :nth-child(1) i{
     color: #0065FC;
     display: inline-block;
@@ -167,27 +179,23 @@ aside :nth-child(1) i{
 
 }
 
+/*HEBERGEMENT-MARSEILLE */
+
 #conteneur-hebergement{
     display: flex;
     flex-wrap: wrap;
 }
 
 .panneau-hebergement-ville{
-    width: 870px;
-    background-color:  #F2F2F2;
-    margin-right: 3.50%;
-    margin-bottom: 3.50%;
-    border-radius: 30px;
-}
-
-.panneau-hebergement-populaire{
-    width: 420px;
+    margin-right: 40px;
+    width: 770px;
     background-color:  #F2F2F2;
     border-radius: 30px;
 }
 
-#conteneur-hebergement div h3{
-    padding-left: 20px;
+.panneau-hebergement-ville div{
+    border: solid white 3px;
+    padding: 4px;
 }
 
 #conteneur-hebergement-ville{
@@ -197,6 +205,31 @@ aside :nth-child(1) i{
     align-items: center;
 }
 
+#conteneur-hebergement-ville div{
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 40px;
+ }
+
+ #conteneur-hebergement-ville img{
+    width: 230px;
+	height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+
+
+/* HEBERGEMENT-POPULAIRE */
+
+.panneau-hebergement-populaire{
+    width: 420px;
+    background-color:  #F2F2F2;
+    border-radius: 30px;
+}
+
+.panneau-hebergement-populaire h3 i{
+    float: right;
+}
 
 #conteneur-hebergement-populaire{
     display: flex;
@@ -204,38 +237,79 @@ aside :nth-child(1) i{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-
-}
-
-#conteneur-hebergement-ville div{
-   padding: 20px;
 }
 
 #conteneur-hebergement-populaire div{
-    padding: 20px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    width: 330px;
 }
 
 #conteneur-hebergement-populaire img{
-    width: 225px;
     border-radius: 5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 134px;
+	height: 126px;
+    float: left;
+    max-width: 100%;
 }
-#conteneur-hebergement-ville img{
-    width: 225px;
-    border-radius: 5px;
+
+/* ACTIVITES */
+
+.panneau-activite {
+    border: solid black 2px;
+    margin-top: 20px;
 }
 
 #conteneur-activites{
-    justify-content: center;
     display: flex;
     flex-flow: wrap;
 }
 
+
 #conteneur-activites div{
-    width: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 }
-#conteneur-activites div img{
-    width: 200px;
+
+#article1{
+ 
+    border: solid red 2px;
+    box-shadow: 8px 8px 12px #aaa;
 }
+
+#article1 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 390px;
+}
+
+#article2{
+    border: solid blue 2px;
+
+    
+}
+
+#article2 div{
+    border: solid green 2px;
+    box-shadow: 8px 8px 12px #aaa;
+    
+}
+
+#article2 img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 105px;
+}
+
+/* FOOTER */
+
 footer{
     text-decoration: none;
     display: flex;
