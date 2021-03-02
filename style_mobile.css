@@ -16,12 +16,13 @@ a{
 
 header{
     display: flex;
-    font-size: 0.9rem;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-left: 20px;
 }
 
 header title{
     padding-bottom: 15px;
+    padding-left: 15px;
 }
 
 #conteneur-navigation ul{
@@ -29,29 +30,24 @@ header title{
     
 }
 
-#conteneur-navigation ul li{
-    display: inline;
-    padding-inline: 40px;
-    
-}
-
 #boutton-inscrire{
     color:  #0065FC;
-    padding-inline: 40px;
-    margin-top: 12px;
     font-weight: bold;
+    padding-top: 15px;
 }
 
 body{
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
     margin: 0px;
 }
 
 main{
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: lightblue;
+
+}
+
+#titre{
+    padding-left: 15px;
+    padding-right: 20px
 }
 
 /* BARRE DE RECHERCHE */
@@ -59,11 +55,14 @@ main{
 #barre-recherche{
     display: flex;
     padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 20px
 }
 
 #filtre a{
     text-decoration: none;
     color: black;
+    margin: 5px;
 }
 
 input{
@@ -82,17 +81,18 @@ input{
 #icone-map{
     padding: 15px;
     background-color:  #F2F2F2;
-    border-top-left-radius:  20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius:  10px;
+    border-bottom-left-radius: 10px;
 }
 
 #barre-recherche button{
+    font-weight: 900;
     padding: 15px;
     background-color: #0065FC;
+    content: '\f002';
     color: white;
-    font-weight: bold;
     font-size: 14px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Font Awesome 5 Free';
     border-top-right-radius:  10px;
     border-bottom-right-radius: 10px;
     border: 0;
@@ -105,10 +105,15 @@ input{
     flex-wrap: wrap;
     align-items: center;
     padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #filtre h4{
-    padding-right: 25px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 150px;
 }
 
 #filtre a{
@@ -170,8 +175,10 @@ input{
 
 /* INFORMATION */
 
-aside :nth-child(1){
-    padding-bottom: 15px;
+p{
+    padding-right: 20px;
+    padding-left: 20px;
+
 }
 
 p i{
@@ -188,36 +195,41 @@ p i{
 
 #conteneur-hebergement{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
 }
 
 .panneau-hebergement-ville{
-    margin-right: 35px;
     width: 800px;
-    background-color:  #F2F2F2;
-    border-radius: 20px;
+    padding-top: 0px;
     padding: 20px;
+    
 }
 
-.panneau-hebergement-ville div{
-    border: solid white 4px;
-    box-shadow: 0px 1px 9px #aaa;
+#navigation{
+    display: inline;
+}
+
+.panneau-hebergement-ville h3{
+    padding-left: 10px;
+    
 }
 
 #conteneur-hebergement-ville{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
 #conteneur-hebergement-ville div{
-    background-color: white;
     border-radius: 20px;
     margin-bottom: 30px;
+    box-shadow: 0px 3px 6px #aaa;
  }
 
  #conteneur-hebergement-ville img{
-    width: 230px;
+    width: 320px;
 	height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius:20px;
@@ -227,32 +239,36 @@ p i{
 
 .panneau-hebergement-populaire{
     background-color:  #F2F2F2;
-    border-radius: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 15px;
+}
+
+.panneau-hebergement-populaire h3{
+    padding-left: 30px;
 }
 
 .panneau-hebergement-populaire h3 i{
     float: right;
+    padding-right: 30px;
 }
 
 #conteneur-hebergement-populaire{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 #conteneur-hebergement-populaire div{
     padding: 6px;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 26px;
     margin-bottom: 40px;
-    width: 300px;
-    box-shadow: 0px 1px 9px #aaa;
+    width: 320px;
+    box-shadow: 0px 3px 6px #aaa;
 }
 
 #conteneur-hebergement-populaire img{
-    border-radius: 5px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 134px;
@@ -264,108 +280,48 @@ p i{
 /* ACTIVITES */
 
 .panneau-activite {
-    margin-top:60px;
-    margin-bottom: 60px;
+    margin-top:30px;
+    margin-bottom: 30px;
 }
 
 .panneau-activite h3{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    padding-left: 30px;
 }
 
 #conteneur-activites{
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+
 }
 
 #conteneur-activites h4{
     padding-left: 15px;
+    margin: 15px;
 }
-
 
 #conteneur-activites div{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-
-}
-
-#article1{
- 
-    box-shadow: 0px 1px 9px #aaa;
-    margin-right: 40px;
-    border-radius: 20px;
-}
-
-#article1 img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 280px;
-    height: 380px;
-}
-
-#article2{
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-#article2 div{
-    box-shadow: 0px 1px 9px #aaa;
+    
+    margin: 15px;
+    box-shadow: 0px 3px 6px #aaa;
     border-radius: 20px;
 
 }
-
-#article2 img{
+#conteneur-activites img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 280px;
+    width: 330px;
     height: 120px;
 }
 
-#article3{
-    box-shadow: 0px 1px 9px #aaa;
-    margin-right: 40px;
-    margin-left: 40px;
-    border-radius: 20px;
-}
-
-#article3 img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 280px;
-    height: 380px;
-}
-
-#article4{
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
-}
-
-#article4 div{
-    box-shadow: 0px 1px 9px #aaa;
-    border-radius: 20px;
-}
-
-
-
-#article4 img{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 280px;
-    height: 120px;
-}
 
 /* FOOTER */
 
 footer{
-    text-decoration: none;
-    display: flex;
     background-color: #F2F2F2;
-    justify-content: flex-start;
-    margin-left: 0px;
-    margin-right: 0px;
-
+    padding-top: 45px;
+    padding-bottom: 40px;
 }
 
 footer a{
@@ -374,30 +330,22 @@ footer a{
 }
 
 footer h4{
-    margin-bottom: 30px;
+    padding-left: 40px;
+    margin: 0;
 }
 
 footer ul{
     list-style-type: none;
-    margin: 0px;
-    padding: 0;
 }
 
 footer ul li{
-    margin-bottom: 15px;
-}
-
-#footer-a-propos{
-    margin-top: 25px;
-    margin-left: 3.47%;
+    padding-bottom: 10px;
 }
 
 #footer-hebergement{
-    margin-top: 25px;
-    margin-left: 15.97%;
+    padding-top: 20px;
 }
 
 #footer-assistance{
-    margin-top: 25px;
-    margin-left: 20.35%;
+    padding-top: 20px;
 }
