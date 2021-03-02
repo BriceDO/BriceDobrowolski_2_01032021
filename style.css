@@ -6,7 +6,6 @@ a{
 #conteneur-navigation{
     display: flex;
 
-
 }
 
 #navigation ul li:hover{
@@ -50,9 +49,10 @@ body{
 }
 
 main{
-    justify-content: center;
     margin-left: 40px;
     margin-right: 40px;
+    width: 1440px;
+    background-color: lightblue;
 }
 
 /* BARRE DE RECHERCHE */
@@ -209,12 +209,12 @@ aside :nth-child(1) i{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 #conteneur-hebergement-ville div{
     background-color: white;
     border-radius: 20px;
+    margin-bottom: 30px;
  }
 
  #conteneur-hebergement-ville img{

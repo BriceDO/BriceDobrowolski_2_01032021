@@ -16,7 +16,6 @@
     <main>
     <header>
         <!-- 1. LOGO -->
-
         <div class="element">
             <img src="images\logo\Reservia.svg" alt="logo">
         </div>
@@ -35,13 +34,13 @@
             <a id="boutton-inscrire" href="#">S'inscrire</a>
         </div>
     </header>
-    <div id="Titre">
+    <div>
         <h3>Trouvez votre hébergement pour des vacances de rêves</h3>
-        <p></p>En plein centre ville ou en pleine nature</p>
+        <p>En plein centre ville ou en pleine nature</p>
     </div>
     <br>
     <!-- 3. Barre de recherche et Filtres -->
-    <section id="barre-recherche">
+    <div id="barre-recherche">
         <span id="icone-map">
             <i class="fas fa-map-marker-alt"></i>
         </span>
@@ -49,7 +48,7 @@
             <input type="recherche" id="rechercher-ville" value="Marseille, France">
         </span>
         <button>Rechercher</button>
-    </section>
+    </div>
     <section id="filtre">
         <h4>Filtres</h4>
         <a href=""><span id="eco">&nbsp;&nbsp;&nbsp;&nbsp;Economique</span></a>
@@ -57,16 +56,14 @@
         <a href=""><span id="rom"></span>&nbsp;&nbsp;&nbsp;&nbsp;Romantique</span></a>
         <a href=""><span id="ani"></span>&nbsp;&nbsp;&nbsp;&nbsp;Animaux autorisés</span></a>
     </section>
-    <aside>
         <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-    </aside>
     <!-- 4. Hébergements ville -->
-    <section id="conteneur-hebergement">
-        <div class="panneau-hebergement-ville">
-            <h3 id="menu-hebergement">
+    <div id="conteneur-hebergement">
+        <section class="panneau-hebergement-ville">
+            <h3>
                 Hébergements à Marseille
             </h3>
-            <section id="conteneur-hebergement-ville">
+            <div id="conteneur-hebergement-ville">
                 <div>
                     <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
                     <br>
@@ -165,17 +162,17 @@
                         </span>
                     </span>
                 </div>
-            </section>
+            </div>
             <b>Afficher plus</b>
-        </div>
+        </section>
         <!-- 4.2 Hébergements populaires -->
-        <div class="panneau-hebergement-populaire">
+        <section class="panneau-hebergement-populaire">
             <h3>
                 Les plus populaires
                 <i class="fas fa-chart-line"></i>
             </h3>
 
-            <section id=conteneur-hebergement-populaire>
+            <div id=conteneur-hebergement-populaire>
                 <div>
                     <img src="images\hebergements\4_small\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
                     <b>Hôtel Le soleil du matin</b><br>
@@ -224,13 +221,13 @@
                         </span>
                     </span>
                 </div>
-            </section>
-        </div>
-    </section>
+            </div>
+        </section>
+    </div>
     <!-- 5. Activités à Marseille -->
-    <div class="panneau-activite">
+    <section class="panneau-activite">
         <h3>Activités à Marseille</h3>
-        <section id="conteneur-activites">
+        <div id="conteneur-activites">
             <div id="article1">
                 <img src="images\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
                 <h4>Vieux Port</h4>
@@ -259,8 +256,8 @@
                     <h4>Parc Longchamp</h4>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </main>
     <footer>
         <!-- Pied de Page -->
@@ -295,7 +292,7 @@
                 </ul>
             </nav>
         </div>
-        <divr id="footer-assistance">
+        <div id="footer-assistance">
             <h4>Assistance</h4>
             <nav>
                 <ul>
@@ -307,7 +304,7 @@
                     </a>
                 </ul>
             </nav>
-            </container>
+        </div>
     </footer>
 
 </body>
