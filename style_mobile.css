@@ -1,39 +1,47 @@
+
+header a{
+color: #0065FC;
+}
+
+.conteneur-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: bold;
+margin-right: 20px;
+margin-left: 20px;
+
+}
+
+.menu-header {
+padding-left: 0px;
+margin-bottom: 40px;
+}
+
+.menu-header li {
+border-bottom: 2px solid #F2F2F2;
+padding-bottom: 20px;
+color: black;
+display: inline ;
+padding-right: 60px;
+padding-left: 37px;
+}
+
+.menu-header li:hover{
+border-bottom: 2px solid #0065FC ; 
+color: #0065FC;
+padding-bottom: 20px;
+}
+
+.titre{
+    margin:20px;
+}
+
+/* BODY */
+
 a{
-    text-decoration: none;
-    color: black;
-}
-
-#conteneur-navigation{
-    display: flex;
-
-}
-
-#navigation ul li:hover{
-    border-top: 2px solid #0065FC ; 
-    color: #0065FC;
-    padding-top: 32px;
-}
-
-header{
-    display: flex;
-    padding-top: 10px;
-    margin-left: 20px;
-}
-
-header title{
-    padding-bottom: 15px;
-    padding-left: 15px;
-}
-
-#conteneur-navigation ul{
-    list-style-type: none;
-    
-}
-
-#boutton-inscrire{
-    color:  #0065FC;
-    font-weight: bold;
-    padding-top: 15px;
+text-decoration: none;
+color: black;
 }
 
 body{
@@ -41,22 +49,12 @@ body{
     margin: 0px;
 }
 
-main{
-
-}
-
-#titre{
-    padding-left: 15px;
-    padding-right: 20px
-}
-
 /* BARRE DE RECHERCHE */
 
 #barre-recherche{
     display: flex;
-    padding-bottom: 15px;
-    padding-left: 15px;
-    padding-right: 20px
+    padding-bottom: 10px;
+    justify-content: center;
 }
 
 #filtre a{
@@ -67,19 +65,16 @@ main{
 
 input{
     border-style: solid;
-    box-shadow: 0em;
-    padding: 13px;
-    text-align: left;
-    border-right: none;
-    border-left: none;
+    padding: 22px;
     border-color: #F2F2F2;
     font-weight: bold;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
+    width: 170px;
 }
 
 #icone-map{
-    padding: 15px;
+    padding: 22px;
     background-color:  #F2F2F2;
     border-top-left-radius:  10px;
     border-bottom-left-radius: 10px;
@@ -87,15 +82,18 @@ input{
 
 #barre-recherche button{
     font-weight: 900;
-    padding: 15px;
+    padding: 22px;
     background-color: #0065FC;
     content: '\f002';
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Font Awesome 5 Free';
-    border-top-right-radius:  10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 15px;
     border: 0;
+}
+
+#barre-recherche div{
+    font-size: 0;
 }
 
 /* FILTRE DE RECHERCHE */
@@ -131,31 +129,9 @@ input{
 
 }
 
-#eco::before{
-    font-family: 'Font Awesome 5 Free';
-	content: "\f53a";
-    font-weight: 900;
-    color: #0065FC;
-    background: #deebff;
-    padding: 13px;
-    border-radius: 50%;
 
-}
-
-#fam::before{
+.icone-filtre{
     font-family: 'Font Awesome 5 Free';
-	content: "\f1ae";
-    font-weight: 900;
-    color: #0065FC;
-    background: #deebff;
-    padding: 13px;
-    width: 20px;
-    border-radius: 50%;
-}
-
-#rom::before{
-    font-family: 'Font Awesome 5 Free';
-	content: "\f004";
     font-weight: 900;
     color: #0065FC;
     background: #deebff;
@@ -163,23 +139,13 @@ input{
     border-radius: 50%;
 }
 
-#ani::before{
-    font-family: 'Font Awesome 5 Free';
-	content: "\f6d3";
-    font-weight: 900;
-    color: #0065FC;
-    background: #deebff;
-    padding: 13px;
-    border-radius: 50%;
-}
+.eco::before{content: "\f53a";}
+.fam::before{content: "\f1ae";}
+.rom::before{content: "\f004";}
+.ani::before{content: "\f6d3";}
 
 /* INFORMATION */
 
-p{
-    padding-right: 20px;
-    padding-left: 20px;
-
-}
 
 p i{
     color: #0065FC;
@@ -206,10 +172,6 @@ p i{
     
 }
 
-#navigation{
-    display: inline;
-}
-
 .panneau-hebergement-ville h3{
     padding-left: 10px;
     
@@ -229,10 +191,11 @@ p i{
  }
 
  #conteneur-hebergement-ville img{
-    width: 320px;
-	height: 120px;
+    width: 100%;
+    height: 120px;
     border-top-left-radius: 20px;
     border-top-right-radius:20px;
+    object-fit: cover;
 }
 
 /* HEBERGEMENT-POPULAIRE */
@@ -271,10 +234,10 @@ p i{
 #conteneur-hebergement-populaire img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    width: 134px;
-	height: 126px;
+    width: 130px;
+	height: 150px;
     float: left;
-    max-width: 100%;
+    object-fit: cover;
 }
 
 /* ACTIVITES */
@@ -311,8 +274,9 @@ p i{
 #conteneur-activites img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 330px;
+    width: 100%;
     height: 120px;
+    object-fit: cover;
 }
 
 
