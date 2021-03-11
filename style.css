@@ -484,7 +484,7 @@ footer ul li{
 
 
 
-@media screen and (min-width: 1201px) and (max-width: 1339px){
+@media screen and (min-width: 1201px) and (max-width: 1439px){
 
     #conteneur-hebergement-ville :nth-child(n+5) img{
         width: 380px;
@@ -492,7 +492,7 @@ footer ul li{
 
 }
 
-@media screen and (min-width: 1250px) and (max-width: 1339px){
+@media screen and (min-width: 1250px) and (max-width: 1439px){
 
     #conteneur-activites :nth-child(n+5) img{
         width: 380px;
