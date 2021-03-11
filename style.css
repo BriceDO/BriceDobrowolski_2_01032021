@@ -46,7 +46,7 @@ header li:hover{
 /* BODY */
 
 h3{
-    padding-left: 8%;
+    margin-left: 30px;
 }
 
 h5{
@@ -229,6 +229,7 @@ input{
 
 .panneau-hebergement-populaire{
     background-color:  #F2F2F2;
+    width: 100%;
 }
 
 .panneau-hebergement-populaire h3 i{
@@ -238,7 +239,7 @@ input{
 
 #conteneur-hebergement-populaire{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -273,6 +274,10 @@ input{
 }
 
 /* ACTIVITES */
+
+#conteneur-activites-v2{
+    display: none;
+}
 
 .panneau-activite {
     margin-top:30px;
@@ -332,11 +337,11 @@ footer ul li{
     padding-bottom: 10px;
 }
 
-@media screen and (min-width: 658px){
+@media screen and (min-width: 640px){
     footer{
         display: flex;
         justify-content: space-around;
-        padding-right: 40px;
+        padding-right: 140px;
 
     }
 
@@ -344,9 +349,41 @@ footer ul li{
         padding-left: 0px;
     }
 
+    #conteneur-hebergement-ville img{
+        width: 260px;
+    }
+
+    .img-activites{
+        width: 280px;
+    }
+
+    .cadre-activites{
+        margin: 10px;
+    }
+
+    #conteneur-hebergement{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .afficher-plus{
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .afficher-plus{
+        margin-bottom: 20px;
+    }
+
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 720px){
+
+    .grand-cadre-pop{
+        margin: 20px;
+        margin-bottom: 50px;
+    }
 
     header ul li{
         right: 30px;
@@ -356,27 +393,8 @@ footer ul li{
     .grand-cadre-hebergement{
         margin: 10px;
     }
-    
-    h3{
-        padding-left: 6%;
-    }
-
-    .afficher-plus{
-        margin-left: 40px;
-    }
-
-    #conteneur-hebergement{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
 
     #conteneur-hebergement-ville{
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
-    #conteneur-hebergement-populaire{
         margin-left: 25px;
         margin-right: 25px;
     }
@@ -411,7 +429,9 @@ footer ul li{
         margin-top: 40px;
     }
 
-
+    .afficher-plus{
+        margin-top: 20px;
+    }
 
     .panneau-hebergement-ville{
         margin-bottom: 30px;
@@ -419,20 +439,15 @@ footer ul li{
 
 }
 
-@media screen and (min-width: 990px){
+@media screen and (min-width: 974px){
 
-
-}
-
-@media screen and (min-width: 1200px){
-    
     header{
         justify-content: flex-end;
     }
     
     header img{
         position: absolute;
-        left: 6%;
+        left: 4%;
         order: 1;
         margin-left: 0%
     }
@@ -465,59 +480,117 @@ footer ul li{
         border-bottom: none;
     }
 
-    #haut-page{
-        margin-left: 6%;
+}
+
+
+
+@media screen and (min-width: 1201px) and (max-width: 1339px){
+
+    #conteneur-hebergement-ville :nth-child(n+5) img{
+        width: 380px;
     }
 
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1339px){
+
+    #conteneur-activites :nth-child(n+5) img{
+        width: 380px;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px){
+    
     #conteneur-hebergement{
         justify-content: space-around;
-        margin: 20px 20px;
+        margin: 40px 20px;
     }
 
     #conteneur-hebergement-ville{
-        justify-content: space-between;
         margin-left: 0px;
         margin-right: 0px;
     }
 
-
-    #conteneur-hebergement-ville img{
-    }
-
     .panneau-hebergement-ville{
-        width: 60%;
+        width: 66%;
         background-color: #F2F2F2;
         border-radius: 20px;
-        padding: 20px 30px;
         margin-bottom: 0px;
 
     }
 
+    .panneau-hebergement h3{
+        margin-left: 10px;
+    }
+
     #conteneur-hebergement-populaire{
         flex-direction: column;
-        padding: 20px 20px;
+        padding-bottom: 20px;
     }
 
     .panneau-hebergement-populaire{
         border-radius: 20px;
+        width: auto;
     }
 
     .panneau-activite{
-        margin: 30px 20px;
+        margin: 30px 25px;
+    }
+
+    #conteneur-activites{
+        display: none;
+    }
+
+    .petit-cadre-activites{
+        display: grid;
+    }
+
+    #conteneur-activites-v2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .grand-cadre-pop{
+        margin-bottom: 20px;
     }
 
     .img-activites{
-
+        width: 320px;
     }
-
-    /*
 
     .img-vert{
-        height: 300px;
+        height: 340px;
     }
 
-    */
-    .grand-cadre-pop{
-        margin-bottom: 20px;
+    #conteneur-activites-v2 h4{
+        padding-left: 20px;
+    }
+
+    .grand-cadre-hebergement{
+        margin: 20px;
+    }
+
+    #haut-page{
+        margin-left: 70px;
+
+    }
+
+    #conteneur-hebergement-ville img{
+        height: 130px;
+    }
+
+    footer{
+        padding-left: 0px;
+    }
+
+    .afficher-plus{
+        margin-top: 50px;
+    }
+
+    h3{
+        margin-left: 40px;
     }
 }
