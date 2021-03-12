@@ -349,7 +349,7 @@ footer ul li{
     footer{
         display: flex;
         justify-content: space-around;
-        padding-right: 140px;
+        padding-right: 10px;
 
     }
 
@@ -500,6 +500,10 @@ footer ul li{
         border-top: solid #0065FC 2px;
         border-bottom: none;
     }
+    footer{
+        padding-right: 140px;
+    }
+    
 
 }
 
