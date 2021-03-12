@@ -149,7 +149,7 @@ input{
     padding-bottom: 10px;
     border-left: none;
 }
-#filtre span a:hover{
+.groupe-filtre div:hover{
         color: #0065FC;
         background-color: #deebff;
 }
@@ -161,7 +161,7 @@ input{
     background: #deebff;
     padding: 13px;
     border-radius: 50%;
-    margin-right: ;
+    margin-right: 10px;
 }
 
 .eco::before{content: "\f53a";}
@@ -350,6 +350,17 @@ footer ul li{
     padding-bottom: 10px;
 }
 
+@media screen and (min-width: 100px) and (max-width: 376px){
+    #icone-map{
+        display: none;
+    }
+
+    input{
+        width: 150px;
+
+    }
+}
+
 @media screen and (min-width: 640px){
     footer{
         display: flex;
@@ -474,15 +485,13 @@ footer ul li{
 
     header img{
         margin-left: 40px;
+        padding-top: 20px;
     }
 
     header{
         display: flex;
         margin-top: 0px;
     }
-
-
-
 
     header a{
         order: 3;
@@ -505,6 +514,7 @@ footer ul li{
     header ul li{
         width: auto;
         padding: 40px;
+        padding-bottom: 20px;
         text-align: center;
         border-bottom: none;
     }
@@ -519,25 +529,6 @@ footer ul li{
     
 
 }
-
-/*
-
-@media screen and (min-width: 1201px) and (max-width: 1439px){
-
-    #conteneur-hebergement-ville :nth-child(n+5) img{
-        width: 380px;
-    }
-
-}
-
-@media screen and (min-width: 1250px) and (max-width: 1439px){
-
-    #conteneur-activites :nth-child(n+5) img{
-        width: 380px;
-    }
-
-}
-*/
 
 @media screen and (min-width: 1440px){
     
