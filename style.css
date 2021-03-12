@@ -7,11 +7,16 @@ header {
     margin-top: 10px;
 }
 
+.header-droit{
+    display: initial;
+}
+
 .boutton-inscrire{
     color: #0065FC;
     font-weight: bold;
     margin-right: 20px;
     float: right;
+    margin-top: 10px;
 }
 
 header img{
@@ -402,6 +407,10 @@ footer ul li{
         
     }
 
+    header{
+        display: block;
+    }
+
     .grand-cadre-hebergement{
         margin: 10px;
     }
@@ -472,6 +481,8 @@ footer ul li{
     }
 
 
+
+
     header a{
         order: 3;
         padding-right: 5%;
@@ -482,6 +493,7 @@ footer ul li{
         padding-left: 40px;
         padding-right: 3%;
         padding-top: 40px;
+        margin-top: 0;
     }
 
     header ul{
