@@ -1,10 +1,10 @@
 /* HEADER */
 
 header {
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 10px;
 }
 
 .boutton-inscrire{
@@ -45,6 +45,13 @@ header li:hover{
 
 /* BODY */
 
+main{
+    max-width: 1440px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h3{
     margin-left: 30px;
 }
@@ -65,6 +72,7 @@ a{
 body{
     font-family: 'Raleway', sans-serif;
     margin: 0px;
+
 }
 
 /* BARRE DE RECHERCHE */
@@ -109,7 +117,7 @@ input{
 /* FILTRE DE RECHERCHE */
 
 #haut-page{
-    margin: 20px;
+    margin: 30px;
 }
 
 #filtre h4{
@@ -376,6 +384,10 @@ footer ul li{
         margin-bottom: 20px;
     }
 
+    .grand-cadre-pop{
+        margin: 20px;
+    }
+
 }
 
 @media screen and (min-width: 720px){
@@ -406,6 +418,15 @@ footer ul li{
 
     i.fas.fa-search{
         display: none;
+    }
+
+    #barre-recherche button{
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    input{
+        width: 200px;
     }
 
     #conteneur-activites{
@@ -441,16 +462,15 @@ footer ul li{
 
 @media screen and (min-width: 974px){
 
-    header{
-        justify-content: flex-end;
-    }
-    
     header img{
-        position: absolute;
-        left: 4%;
-        order: 1;
-        margin-left: 0%
+        margin-left: 40px;
     }
+
+    header{
+        display: flex;
+        margin-top: 0px;
+    }
+
 
     header a{
         order: 3;
@@ -459,13 +479,14 @@ footer ul li{
     }
 
     .boutton-inscrire{
-        padding-left: 20px;
-        padding-right: 6%;
-        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 3%;
+        padding-top: 40px;
     }
 
     header ul{
         order: 2;
+        margin: 0px;
     }
 
     header ul li{
@@ -482,7 +503,7 @@ footer ul li{
 
 }
 
-
+/*
 
 @media screen and (min-width: 1201px) and (max-width: 1439px){
 
@@ -499,13 +520,13 @@ footer ul li{
     }
 
 }
-
+*/
 
 @media screen and (min-width: 1440px){
     
     #conteneur-hebergement{
-        justify-content: space-around;
-        margin: 40px 20px;
+        justify-content: space-between;
+        margin: 40px 15px;
     }
 
     #conteneur-hebergement-ville{
@@ -535,9 +556,6 @@ footer ul li{
         width: auto;
     }
 
-    .panneau-activite{
-        margin: 30px 25px;
-    }
 
     #conteneur-activites{
         display: none;
@@ -574,7 +592,7 @@ footer ul li{
     }
 
     #haut-page{
-        margin-left: 70px;
+        margin-left: 30px;
 
     }
 
@@ -590,7 +608,9 @@ footer ul li{
         margin-top: 50px;
     }
 
-    h3{
-        margin-left: 40px;
+
+    header img{
+        margin-left: 30px;
     }
+
 }
