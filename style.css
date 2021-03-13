@@ -103,6 +103,7 @@ input{
     font-weight: bold;
     font-size: 1em;
     font-family: 'Raleway', sans-serif;
+    width: 175px;
 }
 
 #barre-recherche button{
@@ -350,7 +351,7 @@ footer ul li{
     padding-bottom: 10px;
 }
 
-@media screen and (min-width: 100px) and (max-width: 376px){
+@media screen and (min-width: 100px) and (max-width: 374px){
     #icone-map{
         display: none;
     }
