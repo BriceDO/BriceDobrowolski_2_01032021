@@ -40,8 +40,11 @@ header ul li{
 
 header li:hover{
     border-bottom: 2px solid #0065FC ; 
-    color: #0065FC;
     padding-bottom: 20px;
+}
+
+header a:hover{
+    color: #0065FC;
 }
 
 .titre-principal{
@@ -524,6 +527,7 @@ footer ul li{
         border-top: solid #0065FC 2px;
         border-bottom: none;
     }
+
     footer{
         padding-right: 140px;
     }
