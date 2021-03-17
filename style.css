@@ -43,7 +43,7 @@ header li:hover{
     padding-bottom: 20px;
 }
 
-header a:hover{
+header li:hover a{
     color: #0065FC;
 }
 
@@ -363,6 +363,29 @@ footer ul li{
         width: 150px;
 
     }
+
+    .petit-cadre-pop{
+        padding-left: 5px;
+    }
+
+    .grand-cadre-pop{
+        width: 289px;
+        padding: 0px;
+    }
+
+    #conteneur-hebergement-ville img{
+        width: 280px;
+        height: 110px;
+    }
+
+    .grand-cadre-hebergement{
+        padding: 0px;
+    }
+
+    .img-activites{
+        width: 280px;
+        height: 110px;
+    }
 }
 
 @media screen and (min-width: 640px){
@@ -535,6 +558,69 @@ footer ul li{
 
 }
 
+@media screen and (min-width: 1110px){
+
+    #conteneur-activites-v2 h4{
+        padding-left: 20px;
+    }
+
+    #conteneur-activites-v2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #conteneur-activites{
+        display: none;
+    }
+
+    .petit-cadre-activites{
+        display: grid;
+    }
+
+    .img-activites{
+        width: 250px;
+        height: 107px;
+    }
+
+    .img-vert{
+        height: 300px;
+    }
+
+    #conteneur-hebergement-populaire{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .panneau-hebergement-ville{
+        width: 61%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        margin-bottom: 0px;
+
+    }
+
+    #conteneur-hebergement{
+        justify-content: space-around;
+        margin: 40px 15px;
+    }
+
+    #conteneur-hebergement-ville{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .panneau-hebergement-populaire{
+        border-radius: 20px;
+        width: auto;
+    }
+
+    .grand-cadre-pop{
+        margin-bottom: 63px;
+    }
+
+}
+
 @media screen and (min-width: 1440px){
     
     #conteneur-hebergement{
@@ -569,34 +655,17 @@ footer ul li{
         width: auto;
     }
 
-    #conteneur-activites{
-        display: none;
-    }
-
-    .petit-cadre-activites{
-        display: grid;
-    }
-
-    #conteneur-activites-v2{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
     .grand-cadre-pop{
         margin-bottom: 20px;
     }
 
     .img-activites{
         width: 320px;
+        height: 127px;
     }
 
     .img-vert{
         height: 340px;
-    }
-
-    #conteneur-activites-v2 h4{
-        padding-left: 20px;
     }
 
     .grand-cadre-hebergement{
