@@ -191,7 +191,7 @@ input{
     margin-right: 12px;
 }
 
-/*HEBERGEMENT-MARSEILLE */
+/* HEBERGEMENT-MARSEILLE */
 
 #conteneur-hebergement{
     display: flex;
@@ -353,6 +353,8 @@ footer ul{
 footer ul li{
     padding-bottom: 10px;
 }
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 100px) and (max-width: 374px){
     #icone-map{
