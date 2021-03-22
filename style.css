@@ -107,6 +107,7 @@ input{
     font-size: 1em;
     font-family: 'Raleway', sans-serif;
     width: 175px;
+    outline: none;
 }
 
 #barre-recherche button{
@@ -117,7 +118,9 @@ input{
     font-family: 'Font Awesome 5 Free';
     border-radius: 15px;
     border: 0;
+    outline: none;
 }
+
 
 #barre-recherche button span{
     font-size: 0;
