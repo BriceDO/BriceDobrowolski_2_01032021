@@ -213,6 +213,7 @@ input{
     margin-bottom: 30px;
     box-shadow: 0px 3px 6px #aaa;
     padding: 4px;
+    background-color: white;
  }
 
 .petit-cadre-hebergement{
@@ -335,7 +336,7 @@ input{
 footer{
     background-color: #F2F2F2;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-left: 40px;
 }
 
@@ -606,7 +607,7 @@ footer ul li{
     }
 
     #conteneur-hebergement{
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 40px 15px;
     }
 
@@ -675,6 +676,7 @@ footer ul li{
 
     .grand-cadre-hebergement{
         margin: 20px;
+        
     }
 
     #haut-page{
